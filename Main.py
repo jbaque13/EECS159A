@@ -1,11 +1,11 @@
 #!/usr/bin/enb python
 # -*- coding:utf-8 -*-
 
-from guizero import App,Text,ButtonGroup,PushButton,TextBox,Drawing		#https://pypi.org/project/guizero/
+from guizero import App,Text,ButtonGroup,PushButton,TextBox,Drawing, Picture		#https://pypi.org/project/guizero/
 from datetime import date, datetime
 from time import sleep
 
-#Weather 
+#Weather
 import Weather
 import date_time
 import App_init
@@ -143,6 +143,10 @@ Weather_drawing.text(135 - len(temp),40, text= temp, color=weather_font_color,fo
 Weather_drawing.text(130 - len(temp),95, text= "Low:" + temp_min, color=weather_font_color,font="Arial",size=10)
 Weather_drawing.text(200 - len(temp) + len(temp_high)*2,95, text= "High:" + temp_high, color=weather_font_color,font="Arial",size=10)
 
-    
+
 Time_display.repeat(1000, time_update)
 app.display()
+
+###################################################################################
+# Background Picture
+#####################################################################################
